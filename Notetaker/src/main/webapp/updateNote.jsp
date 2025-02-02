@@ -10,9 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	</head>
 	<body>
-		<div class="container-fluid p-0 m-0">
-			<jsp:include page="navbar.jsp"></jsp:include>
-		</div>
+		<jsp:include page="navbar.jsp"></jsp:include>
 		<div class="container-fluid">
 			
 		</div>

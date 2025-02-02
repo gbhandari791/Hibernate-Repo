@@ -12,9 +12,7 @@
 </head>
 <body>
 
-	<div class="container-fluid p-0 m-0">
-		<jsp:include page="navbar.jsp"></jsp:include>
-	</div>
+	<jsp:include page="navbar.jsp"></jsp:include>
 
 	<div class="container-fluid" id="NotesContainer" >
 		<div id="addNoteContainer" style="display: none;">

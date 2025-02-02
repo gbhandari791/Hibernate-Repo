@@ -11,9 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/loader.css">
 	</head>
 	<body>
-		<div class="container-fluid p-0 m-0">
-			<jsp:include page="navbar.jsp"></jsp:include>
-		</div>
+		<jsp:include page="navbar.jsp"></jsp:include>
 		<div id="showFoldersContainer" >
 			<div class="container-fluid" style="display: flex; justify-content: flex-end; margin-bottom: 0.8rem;">
 				<button type="button" class="btn btn-primary" onclick="$('#create-folder-modal').modal('show')">Create Folder</button>
@@ -77,7 +75,7 @@
 		        	  <input type="hidden" value="createFolder" name="directive" >
 					  <div class="mb-3">
 					    <label for="exampleInputEmail1" class="form-label" >Name</label>
-					    <input type="text" class="form-control" name="folderName">
+					    <input type="text" class="form-control" name="folderName" id="folder-name">
 					  </div>
 					  <div style="display: flex;justify-content: flex-end;">
 					  	<button type="button" class="btn btn-primary" id="create-folder">Create</button>
@@ -103,6 +101,7 @@
                     	$("body").addClass("loader");
                     },
                     complete : function(){
+                    	$("#folder-name").val('');
                     	$('#create-folder-modal').modal('hide');
                     	$("body").removeClass("loader");	
                     }

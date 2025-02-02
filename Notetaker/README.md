@@ -8,7 +8,7 @@ A web-based note-taking application using Hibernate, Servlets, JSP, Bootstrap, j
 - AJAX for smooth interactions  
 
 ## Tech Stack
-- **Backend:**	Java (Servlets), Hibernate, Maven  
+- **Backend:**	Java-8 (Servlets), Hibernate, Maven  
 - **Frontend:**	JSP, Bootstrap, jQuery, AJAX  
 - **Database:**	MySQL (`note_taker` schema)  
 - **Runtime:**	Tomcat v9.0
@@ -24,13 +24,13 @@ cd NoteTaker
 ### 2. Create the database and execute required SQLs
 - All required SQL scripts are present in the `NoteTaker/database` folder.
 
-### 3. Configure Hibernate
-- Update `hibernate.cfg.xml` with your MySQL credentials.
+### 3. Import the project in Eclipse (or any preferred IDE)
 
-### 4. Import the project in Eclipse (or any preferred IDE)
-
-### 5. Set up Tomcat in Eclipse
+### 4. Set up Tomcat in Eclipse
 - Go to **Project Properties** → **Targeted Runtime** → Select **Tomcat 9**.
+
+### 5. Configure Hibernate
+- Update `hibernate.cfg.xml` with your MySQL credentials.
 
 ### 6. Deploy on Tomcat and access the application at:
 ```bash

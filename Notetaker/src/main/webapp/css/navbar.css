@@ -1,4 +1,10 @@
-.nav-cntr {
+.nav {
 	background-color: #1565c0 !important;
 	margin-bottom: 20px;
+}
+
+.nav-cntr {
+	position: sticky;
+  	top: 0;
+  	z-index: 1000; /* To make sure it stays on top of other elements */
 }
